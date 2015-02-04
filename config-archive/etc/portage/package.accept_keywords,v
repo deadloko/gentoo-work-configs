@@ -1,0 +1,1220 @@
+head	1.14;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+expand	@o@;
+
+
+1.14
+date	2015.02.03.03.57.59;	author root;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2015.01.27.05.30.44;	author root;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2015.01.20.04.36.22;	author root;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2015.01.15.11.27.22;	author root;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2015.01.15.11.24.43;	author root;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2014.12.19.05.21.34;	author root;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2014.12.18.06.44.58;	author root;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2014.12.18.06.29.38;	author root;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2014.12.16.06.43.53;	author root;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2014.12.09.04.39.56;	author root;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2014.12.09.04.21.35;	author root;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2014.12.08.07.57.13;	author root;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2014.12.02.05.39.23;	author root;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2014.12.01.13.15.33;	author root;	state Exp;
+branches
+	1.1.1.1;
+next	;
+
+1.1.1.1
+date	2014.12.01.13.15.35;	author root;	state Exp;
+branches;
+next	1.1.1.2;
+
+1.1.1.2
+date	2014.12.02.05.39.25;	author root;	state Exp;
+branches;
+next	1.1.1.3;
+
+1.1.1.3
+date	2014.12.08.07.57.16;	author root;	state Exp;
+branches;
+next	1.1.1.4;
+
+1.1.1.4
+date	2014.12.09.04.21.36;	author root;	state Exp;
+branches;
+next	1.1.1.5;
+
+1.1.1.5
+date	2014.12.09.04.40.17;	author root;	state Exp;
+branches;
+next	1.1.1.6;
+
+1.1.1.6
+date	2014.12.16.06.43.55;	author root;	state Exp;
+branches;
+next	1.1.1.7;
+
+1.1.1.7
+date	2014.12.18.06.29.42;	author root;	state Exp;
+branches;
+next	1.1.1.8;
+
+1.1.1.8
+date	2014.12.18.06.45.02;	author root;	state Exp;
+branches;
+next	1.1.1.9;
+
+1.1.1.9
+date	2014.12.19.05.21.38;	author root;	state Exp;
+branches;
+next	1.1.1.10;
+
+1.1.1.10
+date	2015.01.15.11.24.46;	author root;	state Exp;
+branches;
+next	1.1.1.11;
+
+1.1.1.11
+date	2015.01.15.11.27.45;	author root;	state Exp;
+branches;
+next	1.1.1.12;
+
+1.1.1.12
+date	2015.01.20.04.36.26;	author root;	state Exp;
+branches;
+next	1.1.1.13;
+
+1.1.1.13
+date	2015.01.27.05.30.48;	author root;	state Exp;
+branches;
+next	1.1.1.14;
+
+1.1.1.14
+date	2015.02.03.03.58.02;	author root;	state Exp;
+branches;
+next	;
+
+
+desc
+@Archived config file.
+@
+
+
+1.14
+log
+@dispatch-conf update.
+@
+text
+@# required by chrome-binary-plugins (argument)
+=www-plugins/chrome-binary-plugins-40.0.2214.10_beta1 ~amd64
+# required by skype (argument)
+=net-im/skype-4.3.0.37-r3 ~amd64
+# required by steam-launcher (argument)
+=games-util/steam-launcher-1.0.0.49-r1 ~amd64
+# required by zsh-completions (argument)
+=app-shells/zsh-completions-0.12.0-r1 ~amd64
+# required by clion-eap (argument)
+>=dev-util/clion-eap-140.569.17 ~amd64
+# we need latest crossdev
+>=sys-devel/crossdev-20120214 ~amd64
+# required by elfio (argument)
+=dev-libs/elfio-1.0.3 ~amd64
+# required by app-emulation/docker (argument)
+=app-emulation/docker-1.4.0 ~amd64
+# required by app-emulation/docker-1.4.0[lxc]
+# required by app-emulation/docker (argument)
+=app-emulation/lxc-1.0.6-r1 ~amd64
+# virtualbox modules not compiling on 3.17 kernel 
+#>app-emulation/virtualbox-modules-4.2.24 ~amd64
+#>app-emulation/virtualbox-additions-4.2.24 ~amd64
+#>app-emulation/virtualbox-4.2.24 ~amd64
+#>app-emulation/virtualbox-extpack-oracle-4.2.24 ~amd64
+# required by app-emulation/virtualbox-4.3.20
+# required by virtualbox (argument)
+#=dev-util/kbuild-0.1.9998_pre20131130 ~amd64
+=dev-python/m2crypto-0.22.3-r2 ~amd64
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-java/msgpack-0.5.1 ~amd64
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-java/jgraphx-1.4.2.3 ~amd64
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-java/sleep-2.1 ~amd64
+=net-analyzer/metasploit-4.11.0-r1 ~amd64
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/metasploit_data_models-0.21.3 ~amd64
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/bundler-1.7.4 ~amd64
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/hike-2.1.2 ~amd64
+# required by dev-ruby/activemodel-3.2.21[ruby_targets_ruby19]
+# required by dev-ruby/actionpack-3.2.21::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/railties-3.2.21::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/bcrypt-ruby-3.1.9 ~amd64
+# required by dev-ruby/actionpack-3.2.21::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/railties-3.2.21::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/rack-cache-1.2-r1 ~amd64
+# required by dev-ruby/actionpack-4.2.0[ruby_targets_ruby20]
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/rails-html-sanitizer-1.0.1 ~amd64
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=app-admin/eselect-metasploit-0.16 ~amd64
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby20]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/rubyntlm-0.4.0 ~amd64
+# required by dev-ruby/actionpack-3.2.21::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/railties-3.2.21::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/rack-1.4.5-r3 ~amd64
+# required by dev-ruby/activesupport-4.2.0[ruby_targets_ruby19]
+# required by dev-ruby/actionpack-4.2.0[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/i18n-0.7.0 ~amd64
+# required by dev-ruby/actionpack-3.2.21::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/railties-3.2.21::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/builder-3.0.4-r1 ~amd64
+# required by dev-ruby/activesupport-4.2.0[ruby_targets_ruby20]
+# required by dev-ruby/actionpack-4.2.0[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/tzinfo-1.2.2 ~amd64
+# required by dev-ruby/tzinfo-1.2.2[ruby_targets_ruby20]
+# required by dev-ruby/activesupport-4.2.0[ruby_targets_ruby20]
+# required by dev-ruby/actionpack-4.2.0[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/thread_safe-0.3.4 ~amd64
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19,pcap]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/network_interface-0.0.1-r1 ~amd64
+# required by dev-ruby/rails-dom-testing-1.0.5[ruby_targets_ruby20]
+# required by dev-ruby/actionpack-4.2.0[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/rails-deprecated_sanitizer-1.0.3 ~amd64
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19,java]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/rjb-1.4.9 ~amd64
+# required by dev-ruby/actionpack-3.2.21::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/railties-3.2.21::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/sprockets-2.2.3 ~amd64
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/railties-3.2.21 ~amd64
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/robots-0.10.1-r2 ~amd64
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/rb-readline-0.5.2 ~amd64
+# required by dev-ruby/sprockets-2.12.3[ruby_targets_ruby20]
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/tilt-1.4.1-r1 ~amd64
+# required by dev-ruby/packetfu-1.1.9[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/pcaprub-0.11.3-r1 ~amd64
+# required by dev-ruby/activesupport-3.2.21[ruby_targets_ruby19]
+# required by dev-ruby/activemodel-3.2.21[ruby_targets_ruby19]
+# required by dev-ruby/actionpack-3.2.21::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/railties-3.2.21::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/i18n-0.6.11 ~amd64
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/rack-ssl-1.4.1 ~amd64
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/jsobfu-0.2.1 ~amd64
+# required by dev-ruby/actionpack-4.2.0[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/rack-test-0.6.3 ~amd64
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/metasploit-credential-0.13.11 ~amd64
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/metasploit-model-0.28.0-r4 ~amd64
+# required by dev-ruby/actionpack-4.2.0[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/rails-dom-testing-1.0.5 ~amd64
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/msgpack-0.5.9 ~amd64
+# required by dev-ruby/activerecord-3.2.21::pentoo[ruby_targets_ruby19,postgres]
+# required by dev-ruby/arel-helpers-2.0.1::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/metasploit_data_models-0.21.3::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/pg-0.17.1-r1 ~amd64
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/sprockets-2.12.3 ~amd64
+# required by dev-ruby/activerecord-3.2.21::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/arel-helpers-2.0.1::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/metasploit_data_models-0.21.3::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/activemodel-3.2.21 ~amd64
+# required by dev-ruby/actionpack-3.2.21::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/railties-3.2.21::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/journey-1.0.4-r1 ~amd64
+# required by dev-ruby/metasploit_data_models-0.21.3::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/arel-helpers-2.0.1 ~amd64
+# required by dev-ruby/railties-3.2.21::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/rack-ssl-1.3.4 ~amd64
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/rubyzip-1.1.6 ~amd64
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/recog-1.0.0 ~amd64
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/packetfu-1.1.9 ~amd64
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/activerecord-3.2.21 ~amd64
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/actionpack-4.2.0 ~amd64
+# required by dev-ruby/rails-html-sanitizer-1.0.1[ruby_targets_ruby19]
+# required by dev-ruby/actionpack-4.2.0[ruby_targets_ruby20]
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/loofah-2.0.1 ~amd64
+# required by dev-ruby/sprockets-2.12.3[ruby_targets_ruby20]
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/hike-1.2.3-r1 ~amd64
+# required by dev-ruby/jsobfu-0.2.1::pentoo[ruby_targets_ruby20]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/rkelly-remix-0.0.6 ~amd64
+# required by dev-ruby/actionview-4.2.0[ruby_targets_ruby19]
+# required by dev-ruby/actionpack-4.2.0[ruby_targets_ruby20]
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/activesupport-4.2.0 ~amd64
+# required by dev-ruby/actionview-4.2.0[ruby_targets_ruby19]
+# required by dev-ruby/actionpack-4.2.0[ruby_targets_ruby20]
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/builder-3.2.2 ~amd64
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/meterpreter_bins-0.0.12 ~amd64
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/kissfft-0.0.2 ~amd64
+# required by dev-ruby/actionpack-4.2.0[ruby_targets_ruby20]
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/actionview-4.2.0 ~amd64
+# required by dev-ruby/railties-3.2.21::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/thor-0.19.1 ~amd64
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/redcarpet-3.2.2 ~amd64
+# required by dev-ruby/railties-3.2.21::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/actionpack-3.2.21 ~amd64
+# required by dev-ruby/activerecord-3.2.21::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/arel-helpers-2.0.1::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/metasploit_data_models-0.21.3::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/arel-3.0.2-r2 ~amd64
+# required by dev-ruby/sprockets-2.2.3[ruby_targets_ruby20]
+# required by dev-ruby/actionpack-3.2.21::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/railties-3.2.21::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/rack-1.6.0 ~amd64
+# required by dev-ruby/activerecord-3.2.21::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/arel-helpers-2.0.1::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/metasploit_data_models-0.21.3::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/tzinfo-0.3.38 ~amd64
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/metasploit-concern-0.3.0-r2 ~amd64
+# required by dev-ruby/activemodel-3.2.21[ruby_targets_ruby19]
+# required by dev-ruby/actionpack-3.2.21::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/railties-3.2.21::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/activesupport-3.2.21 ~amd64
+=net-analyzer/w3af-1.6.0.5 ~amd64
+# required by teamviewer (argument)
+=net-misc/teamviewer-9.0.32150 ~amd64
+# required by net-analyzer/zmap-1.2.1
+# required by zmap (argument)
+=dev-util/gengetopt-2.22.6 ~amd64
+# required by zmap (argument)
+=net-analyzer/zmap-1.2.1 ~amd64
+@
+
+
+1.13
+log
+@dispatch-conf update.
+@
+text
+@d392 5
+@
+
+
+1.12
+log
+@dispatch-conf update.
+@
+text
+@d390 2
+@
+
+
+1.11
+log
+@dispatch-conf update.
+@
+text
+@d39 351
+@
+
+
+1.10
+log
+@dispatch-conf update.
+@
+text
+@d29 10
+@
+
+
+1.9
+log
+@dispatch-conf update.
+@
+text
+@d21 8
+a28 3
+>app-emulation/virtualbox-modules-4.2.24 ~amd64
+>app-emulation/virtualbox-additions-4.2.24 ~amd64
+>app-emulation/virtualbox-4.2.24 ~amd64
+@
+
+
+1.8
+log
+@dispatch-conf update.
+@
+text
+@d17 7
+@
+
+
+1.7
+log
+@dispatch-conf update.
+@
+text
+@d15 2
+@
+
+
+1.6
+log
+@dispatch-conf update.
+@
+text
+@d13 2
+@
+
+
+1.5
+log
+@dispatch-conf update.
+@
+text
+@a2 2
+# required by clion (argument)
+>=dev-util/clion-138.2344.17 ~amd64
+d9 4
+@
+
+
+1.4
+log
+@dispatch-conf update.
+@
+text
+@d9 2
+@
+
+
+1.3
+log
+@dispatch-conf update.
+@
+text
+@d7 2
+@
+
+
+1.2
+log
+@dispatch-conf update.
+@
+text
+@d4 3
+a6 1
+=dev-util/clion-138.2344.17 ~amd64
+@
+
+
+1.1
+log
+@dispatch-conf update.
+@
+text
+@d3 2
+@
+
+
+1.1.1.1
+log
+@dispatch-conf update.
+@
+text
+@a2 2
+# required by clion (argument)
+=dev-util/clion-138.2344.17 ~amd64
+@
+
+
+1.1.1.2
+log
+@dispatch-conf update.
+@
+text
+@a4 2
+# required by skype (argument)
+=net-im/skype-4.3.0.37-r3 ~amd64
+@
+
+
+1.1.1.3
+log
+@dispatch-conf update.
+@
+text
+@d4 1
+a4 1
+>=dev-util/clion-138.2344.17 ~amd64
+a6 2
+# required by steam-launcher (argument)
+=games-util/steam-launcher-1.0.0.49-r1 ~amd64
+@
+
+
+1.1.1.4
+log
+@dispatch-conf update.
+@
+text
+@a8 2
+# required by zsh-completions (argument)
+=app-shells/zsh-completions-0.12.0-r1 ~amd64
+@
+
+
+1.1.1.5
+log
+@dispatch-conf update.
+@
+text
+@a10 2
+# required by clion-eap (argument)
+=dev-util/clion-eap-140.569.17 ~amd64
+@
+
+
+1.1.1.6
+log
+@dispatch-conf update.
+@
+text
+@d3 2
+d12 1
+a12 5
+>=dev-util/clion-eap-140.569.17 ~amd64
+# we need latest crossdev
+>=sys-devel/crossdev-20120214 ~amd64
+# required by elfio (argument)
+=dev-libs/elfio-1.0.3 ~amd64
+@
+
+
+1.1.1.7
+log
+@dispatch-conf update.
+@
+text
+@a14 2
+# required by app-emulation/docker (argument)
+=app-emulation/docker-1.4.0 ~amd64
+@
+
+
+1.1.1.8
+log
+@dispatch-conf update.
+@
+text
+@a16 3
+# required by app-emulation/docker-1.4.0[lxc]
+# required by app-emulation/docker (argument)
+=app-emulation/lxc-1.0.6-r1 ~amd64
+@
+
+
+1.1.1.9
+log
+@dispatch-conf update.
+@
+text
+@a19 7
+# virtualbox modules not compiling on 3.17 kernel 
+>app-emulation/virtualbox-modules-4.2.24 ~amd64
+>app-emulation/virtualbox-additions-4.2.24 ~amd64
+>app-emulation/virtualbox-4.2.24 ~amd64
+# required by app-emulation/virtualbox-4.3.20
+# required by virtualbox (argument)
+=dev-util/kbuild-0.1.9998_pre20131130 ~amd64
+@
+
+
+1.1.1.10
+log
+@dispatch-conf update.
+@
+text
+@d21 3
+a23 4
+#>app-emulation/virtualbox-modules-4.2.24 ~amd64
+#>app-emulation/virtualbox-additions-4.2.24 ~amd64
+#>app-emulation/virtualbox-4.2.24 ~amd64
+#>app-emulation/virtualbox-extpack-oracle-4.2.24 ~amd64
+d26 1
+a26 11
+#=dev-util/kbuild-0.1.9998_pre20131130 ~amd64
+=dev-python/m2crypto-0.22.3-r2 ~amd64
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-java/msgpack-0.5.1 ~amd64
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-java/jgraphx-1.4.2.3 ~amd64
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-java/sleep-2.1 ~amd64
+@
+
+
+1.1.1.11
+log
+@dispatch-conf update.
+@
+text
+@a37 351
+=net-analyzer/metasploit-4.11.0-r1 ~amd64
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/metasploit_data_models-0.21.3 ~amd64
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/bundler-1.7.4 ~amd64
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/hike-2.1.2 ~amd64
+# required by dev-ruby/activemodel-3.2.21[ruby_targets_ruby19]
+# required by dev-ruby/actionpack-3.2.21::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/railties-3.2.21::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/bcrypt-ruby-3.1.9 ~amd64
+# required by dev-ruby/actionpack-3.2.21::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/railties-3.2.21::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/rack-cache-1.2-r1 ~amd64
+# required by dev-ruby/actionpack-4.2.0[ruby_targets_ruby20]
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/rails-html-sanitizer-1.0.1 ~amd64
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=app-admin/eselect-metasploit-0.16 ~amd64
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby20]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/rubyntlm-0.4.0 ~amd64
+# required by dev-ruby/actionpack-3.2.21::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/railties-3.2.21::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/rack-1.4.5-r3 ~amd64
+# required by dev-ruby/activesupport-4.2.0[ruby_targets_ruby19]
+# required by dev-ruby/actionpack-4.2.0[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/i18n-0.7.0 ~amd64
+# required by dev-ruby/actionpack-3.2.21::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/railties-3.2.21::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/builder-3.0.4-r1 ~amd64
+# required by dev-ruby/activesupport-4.2.0[ruby_targets_ruby20]
+# required by dev-ruby/actionpack-4.2.0[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/tzinfo-1.2.2 ~amd64
+# required by dev-ruby/tzinfo-1.2.2[ruby_targets_ruby20]
+# required by dev-ruby/activesupport-4.2.0[ruby_targets_ruby20]
+# required by dev-ruby/actionpack-4.2.0[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/thread_safe-0.3.4 ~amd64
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19,pcap]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/network_interface-0.0.1-r1 ~amd64
+# required by dev-ruby/rails-dom-testing-1.0.5[ruby_targets_ruby20]
+# required by dev-ruby/actionpack-4.2.0[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/rails-deprecated_sanitizer-1.0.3 ~amd64
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19,java]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/rjb-1.4.9 ~amd64
+# required by dev-ruby/actionpack-3.2.21::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/railties-3.2.21::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/sprockets-2.2.3 ~amd64
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/railties-3.2.21 ~amd64
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/robots-0.10.1-r2 ~amd64
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/rb-readline-0.5.2 ~amd64
+# required by dev-ruby/sprockets-2.12.3[ruby_targets_ruby20]
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/tilt-1.4.1-r1 ~amd64
+# required by dev-ruby/packetfu-1.1.9[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/pcaprub-0.11.3-r1 ~amd64
+# required by dev-ruby/activesupport-3.2.21[ruby_targets_ruby19]
+# required by dev-ruby/activemodel-3.2.21[ruby_targets_ruby19]
+# required by dev-ruby/actionpack-3.2.21::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/railties-3.2.21::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/i18n-0.6.11 ~amd64
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/rack-ssl-1.4.1 ~amd64
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/jsobfu-0.2.1 ~amd64
+# required by dev-ruby/actionpack-4.2.0[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/rack-test-0.6.3 ~amd64
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/metasploit-credential-0.13.11 ~amd64
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/metasploit-model-0.28.0-r4 ~amd64
+# required by dev-ruby/actionpack-4.2.0[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/rails-dom-testing-1.0.5 ~amd64
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/msgpack-0.5.9 ~amd64
+# required by dev-ruby/activerecord-3.2.21::pentoo[ruby_targets_ruby19,postgres]
+# required by dev-ruby/arel-helpers-2.0.1::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/metasploit_data_models-0.21.3::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/pg-0.17.1-r1 ~amd64
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/sprockets-2.12.3 ~amd64
+# required by dev-ruby/activerecord-3.2.21::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/arel-helpers-2.0.1::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/metasploit_data_models-0.21.3::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/activemodel-3.2.21 ~amd64
+# required by dev-ruby/actionpack-3.2.21::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/railties-3.2.21::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/journey-1.0.4-r1 ~amd64
+# required by dev-ruby/metasploit_data_models-0.21.3::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/arel-helpers-2.0.1 ~amd64
+# required by dev-ruby/railties-3.2.21::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/rack-ssl-1.3.4 ~amd64
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/rubyzip-1.1.6 ~amd64
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/recog-1.0.0 ~amd64
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/packetfu-1.1.9 ~amd64
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/activerecord-3.2.21 ~amd64
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/actionpack-4.2.0 ~amd64
+# required by dev-ruby/rails-html-sanitizer-1.0.1[ruby_targets_ruby19]
+# required by dev-ruby/actionpack-4.2.0[ruby_targets_ruby20]
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/loofah-2.0.1 ~amd64
+# required by dev-ruby/sprockets-2.12.3[ruby_targets_ruby20]
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/hike-1.2.3-r1 ~amd64
+# required by dev-ruby/jsobfu-0.2.1::pentoo[ruby_targets_ruby20]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/rkelly-remix-0.0.6 ~amd64
+# required by dev-ruby/actionview-4.2.0[ruby_targets_ruby19]
+# required by dev-ruby/actionpack-4.2.0[ruby_targets_ruby20]
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/activesupport-4.2.0 ~amd64
+# required by dev-ruby/actionview-4.2.0[ruby_targets_ruby19]
+# required by dev-ruby/actionpack-4.2.0[ruby_targets_ruby20]
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/builder-3.2.2 ~amd64
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/meterpreter_bins-0.0.12 ~amd64
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/kissfft-0.0.2 ~amd64
+# required by dev-ruby/actionpack-4.2.0[ruby_targets_ruby20]
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/actionview-4.2.0 ~amd64
+# required by dev-ruby/railties-3.2.21::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/thor-0.19.1 ~amd64
+# required by dev-ruby/metasploit-model-0.28.0-r4::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/redcarpet-3.2.2 ~amd64
+# required by dev-ruby/railties-3.2.21::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/actionpack-3.2.21 ~amd64
+# required by dev-ruby/activerecord-3.2.21::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/arel-helpers-2.0.1::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/metasploit_data_models-0.21.3::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/arel-3.0.2-r2 ~amd64
+# required by dev-ruby/sprockets-2.2.3[ruby_targets_ruby20]
+# required by dev-ruby/actionpack-3.2.21::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/railties-3.2.21::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/rack-1.6.0 ~amd64
+# required by dev-ruby/activerecord-3.2.21::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/arel-helpers-2.0.1::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/metasploit_data_models-0.21.3::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/tzinfo-0.3.38 ~amd64
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/metasploit-concern-0.3.0-r2 ~amd64
+# required by dev-ruby/activemodel-3.2.21[ruby_targets_ruby19]
+# required by dev-ruby/actionpack-3.2.21::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/railties-3.2.21::pentoo[ruby_targets_ruby19]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+=dev-ruby/activesupport-3.2.21 ~amd64
+@
+
+
+1.1.1.12
+log
+@dispatch-conf update.
+@
+text
+@a388 3
+=net-analyzer/w3af-1.6.0.5 ~amd64
+# required by teamviewer (argument)
+=net-misc/teamviewer-9.0.32150 ~amd64
+@
+
+
+1.1.1.13
+log
+@dispatch-conf update.
+@
+text
+@a391 5
+# required by net-analyzer/zmap-1.2.1
+# required by zmap (argument)
+=dev-util/gengetopt-2.22.6 ~amd64
+# required by zmap (argument)
+=net-analyzer/zmap-1.2.1 ~amd64
+@
+
+
+1.1.1.14
+log
+@dispatch-conf update.
+@
+text
+@a396 2
+# required by docker (argument)
+=app-emulation/docker-1.4.1 ~amd64
+@

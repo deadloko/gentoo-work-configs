@@ -1,0 +1,14 @@
+[ethernet]
+mac-address=30:85:A9:AF:1C:CB
+
+[connection]
+id=Проводное соединение 1
+uuid=70c31a76-5cb5-4301-b0a6-79f9e5471b31
+type=ethernet
+
+[ipv6]
+method=auto
+
+[ipv4]
+method=manual
+address1=192.168.55.155/24

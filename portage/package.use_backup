@@ -1,0 +1,7 @@
+# required by kde-base/ktnef-4.12.5
+# required by kde-base/kdepim-meta-4.12.5
+# required by kde-base/kde-meta-4.12.5[semantic-desktop]
+# required by kde-meta (argument)
+=app-office/akonadi-server-1.12.1-r1 soprano
+=media-gfx/splashutils-1.5.4.4-r1 -mng -truetype
+=sys-fs/ntfs3g-2013.1.13 -external-fuse 

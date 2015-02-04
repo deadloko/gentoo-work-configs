@@ -1,0 +1,92 @@
+head	1.2;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+expand	@o@;
+
+
+1.2
+date	2015.01.29.08.07.48;	author root;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2015.01.15.11.27.22;	author root;	state Exp;
+branches
+	1.1.1.1;
+next	;
+
+1.1.1.1
+date	2015.01.15.11.27.51;	author root;	state Exp;
+branches;
+next	1.1.1.2;
+
+1.1.1.2
+date	2015.01.29.08.07.50;	author root;	state Exp;
+branches;
+next	;
+
+
+desc
+@Archived config file.
+@
+
+
+1.2
+log
+@dispatch-conf update.
+@
+text
+@# required by kde-base/ktnef-4.12.5
+# required by kde-base/kdepim-meta-4.12.5
+# required by kde-base/kde-meta-4.12.5[semantic-desktop]
+# required by kde-meta (argument)
+=app-office/akonadi-server-1.12.1-r1 soprano
+=media-gfx/splashutils-1.5.4.4-r1 -mng -truetype
+=sys-fs/ntfs3g-2013.1.13 -external-fuse 
+>=media-sound/clementine-1.2.2 box dropbox lastfm moodbar mtp projectm
+=app-emulation/docker-1.4.0 -zsh-completion
+# required by dev-ruby/metasploit_data_models-0.21.3::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+>=dev-ruby/activerecord-3.2.21:3.2 postgres
+@
+
+
+1.1
+log
+@dispatch-conf update.
+@
+text
+@d10 6
+@
+
+
+1.1.1.1
+log
+@dispatch-conf update.
+@
+text
+@a9 6
+# required by dev-ruby/metasploit_data_models-0.21.3::pentoo[ruby_targets_ruby20]
+# required by dev-ruby/metasploit-credential-0.13.11::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/metasploit-4.11.0-r1::pentoo[ruby_targets_ruby19]
+# required by net-analyzer/armitage-20141129::pentoo
+# required by armitage (argument)
+>=dev-ruby/activerecord-3.2.21:3.2 postgres
+@
+
+
+1.1.1.2
+log
+@dispatch-conf update.
+@
+text
+@a15 3
+# required by sys-devel/clang-3.5.0-r100
+# required by clang (argument)
+=sys-devel/llvm-3.5.0 clang
+@

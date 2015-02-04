@@ -1,0 +1,52 @@
+#!/sbin/runscript
+# Copyright 1999-2007 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+
+depend() {
+	before xdm
+	use localmount
+}
+
+start() {
+	. /sbin/splash-functions.sh
+	splash_setup
+
+	if [ -z "${FBCONDECOR_TTYS}" ]; then
+		FBCONDECOR_TTYS=$(seq 1 "${rc_tty_number:-${RC_TTY_NUMBER:-12}}")
+	fi
+
+	local err=0
+
+	# Only do this if the kernel supports fbcondecor.
+	if fbcondecor_supported && [ "${SPLASH_MODE_REQ}" != "off" ]; then
+		ebegin "Setting framebuffer console images"
+
+		for TTY in ${FBCONDECOR_TTYS} ; do
+			theme="${SPLASH_THEME}"
+
+			[ ${TTY} = "1" -a -z "$(/usr/sbin/fbcondecor_ctl -c getstate --tty=${TTY}| grep 'off')" ] && continue
+			[ ${TTY} = "0" ] && continue
+
+			if [ -n "${FBCONDECOR_TTY_MAP}" ]; then
+				for i in ${FBCONDECOR_TTY_MAP//,/ } ; do
+					if [ "${i%:*}" = "${TTY}" ]; then
+						theme="${i#*:}"
+					fi
+				done
+			fi
+
+			if [ -x /usr/bin/openvt ]; then
+				/usr/bin/openvt -c "${TTY}" -- printf "" 2>/dev/null
+			fi
+
+			if ! fbcondecor_set_theme "${theme}" "${TTY}"; then
+				err=1
+				eerror "Failed to set background image on tty${TTY}"
+				if [ -z "${FBCONDECOR_TTY_MAP}" ]; then
+					break
+				fi
+			fi
+		done
+		eend "${err}"
+	fi
+}

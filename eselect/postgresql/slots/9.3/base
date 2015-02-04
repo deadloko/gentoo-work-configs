@@ -1,0 +1,1 @@
+postgres_ebuilds="${postgres_ebuilds} postgresql-9.3.5-r2"

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thememeta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://fbsplash.berlios.de/schemas/1.0/thememeta.xsd">
+	<name>emerge-world</name>
+	<version>1.0</version>
+	<author>
+		<name>J. Pauli</name>
+		<email>jpauli@gmx.net</email>
+	</author>
+	<description>A fbsplash theme inspired by the gentoo package manager.</description>
+	<license>THE BEER-WARE LICENSE</license>
+</thememeta>
+

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+. /sbin/splash-functions.sh
+if [ $2 != 0 ]
+then
+    splash_comm_send "set message failed to start $1"
+    sleep 2
+fi

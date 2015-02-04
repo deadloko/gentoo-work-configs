@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=PulseAudio Sound System KDE Routing Policy
+Name[ru]=Звуковая система PulseAudio с маршрутизацией для KDE
+Comment=Start the PulseAudio Sound System with KDE Routing Policy
+Comment[ru]=Запуск звуковой системы PulseAudio с маршрутизацией для KDE
+Exec=start-pulseaudio-kde
+Terminal=false
+Type=Application
+Categories=
+GenericName=
+OnlyShowIn=KDE;

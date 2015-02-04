@@ -1,0 +1,5 @@
+#!/bin/bash
+
+. /sbin/splash-functions.sh
+
+splash_comm_send "set message stopping $1 ..."

@@ -1,0 +1,10 @@
+# required by chrome-binary-plugins (argument)
+>=www-plugins/chrome-binary-plugins-40.0.2214.10_beta1:beta google-chrome
+# required by oracle-jdk-bin (argument)
+>=dev-java/oracle-jdk-bin-1.7.0.71 Oracle-BCLA-JavaSE
+# required by virtualbox-extpack-oracle (argument)
+>=app-emulation/virtualbox-extpack-oracle-4.2.24 PUEL
+# required by skype (argument)
+>=net-im/skype-4.3.0.37-r3 skype-4.0.0.7-copyright
+# required by teamviewer (argument)
+>=net-misc/teamviewer-9.0.32150 TeamViewer

@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Print Queue Applet
+Name[ru]=Апплет очереди печати
+Comment=System tray icon for managing print jobs
+Comment[ru]=Иконка области уведомления для управления заданиями печати
+Exec=system-config-printer-applet
+Terminal=false
+Type=Application
+Icon=printer
+NotShowIn=KDE;
+StartupNotify=false
+X-GNOME-Autostart-Delay=30
+X-Desktop-File-Install-Version=0.22
+Categories=System;Monitor;GTK;
